@@ -9,20 +9,33 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    Hello World !
-    Hello again
-    <!--
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
 
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input placeholder="name" type="text" id="name" required />
+      <label id="email-label" for="email">Email</label>
+      <input placeholder="emal" type="email" id="email" required />
+      <label id="number-label" for="number">Numer</label>
+      <input placeholder="number" type="number" id="number" min="5" max="50" />
+      <select id="dropdown">
+        <option value="item_one">Item_one</option>
+        <option value="item_two">Item_two</option>
+      </select>
+      <input type="radio" value="Male" name="name" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" value="Female" name="name" />
+      <label for="female">Female</label>
+      <input type="checkbox" id="BMW" value="BMW" />
+      <label for="BMW">BMW</label>
+      <input type="checkbox" id="volgswagon" value="volgswagon" />
+      <label for="volgswagon">volgswagon</label>
+      <textarea id="textarea" cols="30" rows="10"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
